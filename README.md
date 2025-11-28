@@ -213,9 +213,7 @@ wrangler deploy
 因为 Cron 是每分钟触发一次，刚部署完可能没数据。
 你可以等待 1 分钟。
 或者在 Cloudflare 后台 -> Workers -> 你的项目 -> Triggers -> Cron Triggers 点击 "Test Cron" 手动触发一次。
-💡 如何包装让它在 Github 增加星星？
-项目名称：取个洋气的名字，比如 UptimeFlare 或 Serverless-Status-Page。
-截图：部署好后，截图那个漂亮的面板，放在 README 的第一行。
+
 卖点（Features）：
 ✅ Free forever: Runs on Cloudflare Workers free tier.
 ✅ Serverless: No VPS needed.
@@ -223,6 +221,7 @@ wrangler deploy
 ✅ Customizable: Easy to change styles and targets.
 一键部署按钮：
 在 README 中加上 Cloudflare 的 "Deploy to Workers" 按钮（Cloudflare 官方提供了这个链接生成器），让小白也能一键 Fork + 部署。
+
 进阶优化思路（作为后续更新方向）
 Telegram/微信通知：在 scheduled 函数中，如果检测到 status === 'down'，调用 Telegram Bot API 发送报警。
 历史图表：将数据存入 Cloudflare D1 (SQL 数据库)，然后在前端用 Chart.js 画出 24小时延迟曲线（这更像哪吒）。
