@@ -1,4 +1,4 @@
-我们将这个项目命名为 Worker-Nezha-Lite。
+项目名称：UptimeFlare
 核心原理
 监控端 (Cron)：利用 Workers 的 Cron Trigger，每分钟自动唤醒一次，并发请求你配置的目标 URL。
 数据端 (KV)：将请求的响应时间（Latency）、状态码（200/500）存入 Cloudflare KV。
